@@ -17,7 +17,7 @@ namespace OpenGL
 
             GL.BindBuffer(BufferTarget.ArrayBuffer, id);
 
-            GL.BufferData(BufferTarget.ArrayBuffer, size, data, BufferUsageHint.DynamicDraw);
+            GL.BufferData(BufferTarget.ArrayBuffer, size, data, BufferUsageHint.StaticDraw);
         }
 
         public void Bind()

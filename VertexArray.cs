@@ -11,6 +11,7 @@ namespace OpenGL
     {
         private int id;
 
+
         public VertexArray()
         {
             id = GL.GenVertexArray();

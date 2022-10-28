@@ -20,17 +20,10 @@ namespace OpenGL
             if (ib != null)
             {
                 ib.Bind();
-                count = ib.Count;
             }
 
+            GL.DrawElements(BeginMode.Lines,2,DrawElementsType.UnsignedInt, IntPtr.Zero);
 
-
-
-            GL.DrawElements(BeginMode.Points, count, DrawElementsType.UnsignedInt, IntPtr.Zero);
-            if (ib != null)
-            {
-                ib.UnBind();
-            }
             va.UnBind();
         }
     }
