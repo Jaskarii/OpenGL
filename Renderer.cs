@@ -22,7 +22,7 @@ namespace OpenGL
                 ib.Bind();
             }
 
-            GL.DrawElements(BeginMode.Lines,2,DrawElementsType.UnsignedInt, IntPtr.Zero);
+            GL.DrawElements(BeginMode.Lines,6,DrawElementsType.UnsignedInt, IntPtr.Zero);
 
             va.UnBind();
         }
